@@ -1,0 +1,1299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BD59717-712F-4661-A333-0745E4277978}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>sporsalonu</RootNamespace>
+    <AssemblyName>sporsalonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="antrenmanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenmanlar.Designer.cs">
+      <DependentUpon>antrenmanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\agustos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\agustos.Designer.cs">
+      <DependentUpon>agustos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa.Designer.cs">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\aralik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\aralik.Designer.cs">
+      <DependentUpon>aralik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diyetboks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diyetboks.Designer.cs">
+      <DependentUpon>diyetboks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diyetfit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diyetfit.Designer.cs">
+      <DependentUpon>diyetfit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diyetpilates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diyetpilates.Designer.cs">
+      <DependentUpon>diyetpilates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dumbeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dumbeller.Designer.cs">
+      <DependentUpon>dumbeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\bahaneyok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\bahaneyok.Designer.cs">
+      <DependentUpon>bahaneyok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\isinma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\isinma.Designer.cs">
+      <DependentUpon>isinma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\barfiks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\barfiks.Designer.cs">
+      <DependentUpon>barfiks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bursa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bursa.Designer.cs">
+      <DependentUpon>bursa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\ekim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\ekim.Designer.cs">
+      <DependentUpon>ekim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\eylul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\eylul.Designer.cs">
+      <DependentUpon>eylul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dinlenme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dinlenme.Designer.cs">
+      <DependentUpon>dinlenme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell.Designer.cs">
+      <DependentUpon>dumbell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell1.Designer.cs">
+      <DependentUpon>dumbell1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell2.Designer.cs">
+      <DependentUpon>dumbell2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell3.Designer.cs">
+      <DependentUpon>dumbell3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell4.Designer.cs">
+      <DependentUpon>dumbell4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell5.Designer.cs">
+      <DependentUpon>dumbell5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell6.Designer.cs">
+      <DependentUpon>dumbell6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell7.Designer.cs">
+      <DependentUpon>dumbell7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell8.Designer.cs">
+      <DependentUpon>dumbell8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\dumbell9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\dumbell9.Designer.cs">
+      <DependentUpon>dumbell9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\demir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\demir.Designer.cs">
+      <DependentUpon>demir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="egzersizler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="egzersizler.Designer.cs">
+      <DependentUpon>egzersizler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\fit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\fit.Designer.cs">
+      <DependentUpon>fit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gelisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelisim.Designer.cs">
+      <DependentUpon>gelisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gelisimraporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelisimraporu.Designer.cs">
+      <DependentUpon>gelisimraporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gelisimtakvimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelisimtakvimi.Designer.cs">
+      <DependentUpon>gelisimtakvimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hakkımızda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hakkımızda.Designer.cs">
+      <DependentUpon>hakkımızda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\haziran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\haziran.Designer.cs">
+      <DependentUpon>haziran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hizliegzersiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hizliegzersiz.Designer.cs">
+      <DependentUpon>hizliegzersiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hocasayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hocasayfasi.Designer.cs">
+      <DependentUpon>hocasayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\ipatlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\ipatlama.Designer.cs">
+      <DependentUpon>ipatlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\incel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\incel.Designer.cs">
+      <DependentUpon>incel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="istanbul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="istanbul.Designer.cs">
+      <DependentUpon>istanbul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\kasim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\kasim.Designer.cs">
+      <DependentUpon>kasim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitliuyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitliuyeler.Designer.cs">
+      <DependentUpon>kayitliuyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\mart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\mart.Designer.cs">
+      <DependentUpon>mart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\mayis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\mayis.Designer.cs">
+      <DependentUpon>mayis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\nisan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\nisan.Designer.cs">
+      <DependentUpon>nisan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\ocak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\ocak.Designer.cs">
+      <DependentUpon>ocak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\kosu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\kosu.Designer.cs">
+      <DependentUpon>kosu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\mekik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\mekik.Designer.cs">
+      <DependentUpon>mekik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\limityok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\limityok.Designer.cs">
+      <DependentUpon>limityok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciler.Designer.cs">
+      <DependentUpon>ogrenciler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciverigirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciverigirisi.Designer.cs">
+      <DependentUpon>ogrenciverigirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrsayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrsayfasi.Designer.cs">
+      <DependentUpon>ogrsayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="raporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporlama.Designer.cs">
+      <DependentUpon>raporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salonlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salonlar.Designer.cs">
+      <DependentUpon>salonlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\subat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\subat.Designer.cs">
+      <DependentUpon>subat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylar\temmuz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylar\temmuz.Designer.cs">
+      <DependentUpon>temmuz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\squat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\squat.Designer.cs">
+      <DependentUpon>squat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="antrenman\sinavv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="antrenman\sinavv.Designer.cs">
+      <DependentUpon>sinavv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\sikilas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hizliantrenmanlar\sikilas.Designer.cs">
+      <DependentUpon>sikilas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tarihselgelisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarihselgelisim.Designer.cs">
+      <DependentUpon>tarihselgelisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyearama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyearama.Designer.cs">
+      <DependentUpon>uyearama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyesayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyesayfasi.Designer.cs">
+      <DependentUpon>uyesayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenikayit.Designer.cs">
+      <DependentUpon>yenikayit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="antrenmanlar.resx">
+      <DependentUpon>antrenmanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell.resx">
+      <DependentUpon>dumbell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell1.resx">
+      <DependentUpon>dumbell1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell2.resx">
+      <DependentUpon>dumbell2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell3.resx">
+      <DependentUpon>dumbell3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell4.resx">
+      <DependentUpon>dumbell4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell5.resx">
+      <DependentUpon>dumbell5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell6.resx">
+      <DependentUpon>dumbell6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell7.resx">
+      <DependentUpon>dumbell7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell8.resx">
+      <DependentUpon>dumbell8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dumbell9.resx">
+      <DependentUpon>dumbell9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\agustos.resx">
+      <DependentUpon>agustos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anasayfa.resx">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\aralik.resx">
+      <DependentUpon>aralik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diyetboks.resx">
+      <DependentUpon>diyetboks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diyetfit.resx">
+      <DependentUpon>diyetfit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diyetpilates.resx">
+      <DependentUpon>diyetpilates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dumbeller.resx">
+      <DependentUpon>dumbeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hizliantrenmanlar\bahaneyok.resx">
+      <DependentUpon>bahaneyok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\isinma.resx">
+      <DependentUpon>isinma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\barfiks.resx">
+      <DependentUpon>barfiks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bursa.resx">
+      <DependentUpon>bursa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\ekim.resx">
+      <DependentUpon>ekim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\eylul.resx">
+      <DependentUpon>eylul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\dinlenme.resx">
+      <DependentUpon>dinlenme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hizliantrenmanlar\demir.resx">
+      <DependentUpon>demir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="egzersizler.resx">
+      <DependentUpon>egzersizler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hizliantrenmanlar\fit.resx">
+      <DependentUpon>fit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelisim.resx">
+      <DependentUpon>gelisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelisimraporu.resx">
+      <DependentUpon>gelisimraporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelisimtakvimi.resx">
+      <DependentUpon>gelisimtakvimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hakkımızda.resx">
+      <DependentUpon>hakkımızda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\haziran.resx">
+      <DependentUpon>haziran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hizliegzersiz.resx">
+      <DependentUpon>hizliegzersiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hocasayfasi.resx">
+      <DependentUpon>hocasayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\ipatlama.resx">
+      <DependentUpon>ipatlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hizliantrenmanlar\incel.resx">
+      <DependentUpon>incel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="istanbul.resx">
+      <DependentUpon>istanbul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\kasim.resx">
+      <DependentUpon>kasim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitliuyeler.resx">
+      <DependentUpon>kayitliuyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\mart.resx">
+      <DependentUpon>mart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\mayis.resx">
+      <DependentUpon>mayis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\nisan.resx">
+      <DependentUpon>nisan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\ocak.resx">
+      <DependentUpon>ocak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\kosu.resx">
+      <DependentUpon>kosu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\mekik.resx">
+      <DependentUpon>mekik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hizliantrenmanlar\limityok.resx">
+      <DependentUpon>limityok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciler.resx">
+      <DependentUpon>ogrenciler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciverigirisi.resx">
+      <DependentUpon>ogrenciverigirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrsayfasi.resx">
+      <DependentUpon>ogrsayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="raporlama.resx">
+      <DependentUpon>raporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salonlar.resx">
+      <DependentUpon>salonlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\subat.resx">
+      <DependentUpon>subat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylar\temmuz.resx">
+      <DependentUpon>temmuz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\squat.resx">
+      <DependentUpon>squat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="antrenman\sinavv.resx">
+      <DependentUpon>sinavv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hizliantrenmanlar\sikilas.resx">
+      <DependentUpon>sikilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarihselgelisim.resx">
+      <DependentUpon>tarihselgelisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyearama.resx">
+      <DependentUpon>uyearama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyesayfasi.resx">
+      <DependentUpon>uyesayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenikayit.resx">
+      <DependentUpon>yenikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\küçükliste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listeee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-turkey-united-states-world-map-icon-distribution-blue-world-map-5a87da908ddcd4.1480563115188527525811.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hakkımızda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anasayfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iptal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\büyüteç.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resim40454.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58b1a0b6441a4603031412.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resimörnek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\runners.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gelişim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\training.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\training.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gelişim1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\training1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takvimm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gelisimarkaplan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gelisimarkaplan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takvim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raporr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takvim1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anasayfaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şubat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nisan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayıs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haziran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temmuz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ağustos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eylül.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasım.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aralık.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocak1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şubat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nisan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mayıs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okişareti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrenciler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hizliant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplann.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hizliant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ant3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ant4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ant5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ant6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan hizliant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şınav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şınavv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şınavvv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mekikk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barfikss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şınavvvv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dumbel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squatt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squatt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanbuyuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanbuyuk-kucuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antarkaplan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antarkaplann.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antarkaplann1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DLL12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DLL13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL355.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DLLL3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DL103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\İP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\İP2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ş1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ş2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ş3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AİP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SQ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\training2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanmor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\training3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gelişim2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MYV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YLF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YMRT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YGRT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AVK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LVS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BRK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PTT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SGN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TVK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRNC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLTT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DNT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HSB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇEK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSBI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KYM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PYN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SBZY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YGRT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YLFB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇRB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLT2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BDM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CVZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayıtlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anasayfaa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anasayfa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayıtlar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplanbuyuk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savve.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
